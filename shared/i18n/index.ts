@@ -198,6 +198,7 @@ function localeUrl(current: LocaleInfo, target: LocaleInfo): string {
 }
 
 function wireLanguageSwitcher(current: LocaleInfo): void {
+  if (LOCALES.length <= 1) return;
   const footer = document.querySelector(".site-footer");
   if (!footer) return;
   const holder = document.createElement("div");

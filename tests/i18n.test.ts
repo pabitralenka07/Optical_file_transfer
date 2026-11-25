@@ -18,20 +18,9 @@ import { ENGLISH_ERRORS, OpticalError, errorText } from "../shared/optical-error
 import { frameVerdictMessage } from "../shared/protocol.ts";
 
 import { messages as en } from "../shared/i18n/locales/en.ts";
-import { messages as es } from "../shared/i18n/locales/es.ts";
-import { messages as ptBr } from "../shared/i18n/locales/pt-br.ts";
-import { messages as fr } from "../shared/i18n/locales/fr.ts";
-import { messages as de } from "../shared/i18n/locales/de.ts";
-import { messages as it } from "../shared/i18n/locales/it.ts";
-import { messages as ru } from "../shared/i18n/locales/ru.ts";
-import { messages as hi } from "../shared/i18n/locales/hi.ts";
-import { messages as zhHans } from "../shared/i18n/locales/zh-hans.ts";
-import { messages as ja } from "../shared/i18n/locales/ja.ts";
-import { messages as ko } from "../shared/i18n/locales/ko.ts";
-import { messages as ar } from "../shared/i18n/locales/ar.ts";
 
 const CATALOGS: Record<string, Messages> = {
-  en, es, "pt-br": ptBr, fr, de, it, ru, hi, "zh-hans": zhHans, ja, ko, ar,
+  en,
 };
 
 /** Every string leaf of a catalog, as [dot.path, value]. */
@@ -70,8 +59,6 @@ test("the registry, the loader table, and the catalogs agree", () => {
   for (const [code, catalog] of Object.entries(CATALOGS)) {
     assert.equal(catalog.meta, localeByCode(code), `${code}: meta is not its registry row`);
   }
-  const arabic = localeByCode("ar")!;
-  assert.equal(arabic.dir, "rtl");
 });
 
 test("every catalog has exactly the English key structure", () => {
@@ -264,15 +251,9 @@ test("every data-i18n key in the HTML pages resolves to a catalog string", () =>
 });
 
 test("browser language lists land on the right locale", () => {
-  assert.equal(matchLocale(["es-MX"])?.code, "es");
-  assert.equal(matchLocale(["pt"])?.code, "pt-br");
-  assert.equal(matchLocale(["pt-PT"])?.code, "pt-br");
-  assert.equal(matchLocale(["zh"])?.code, "zh-hans");
-  assert.equal(matchLocale(["zh-CN"])?.code, "zh-hans");
   assert.equal(matchLocale(["en-GB", "fr"])?.code, "en");
   assert.equal(matchLocale(["da", "sv"]), undefined);
   assert.equal(matchLocale([]), undefined);
-  assert.equal(matchLocale(["AR"])?.code, "ar");
 });
 
 test("fillTokens fills what it knows and leaves what it doesn't", () => {

@@ -43,7 +43,7 @@ export const messages: Messages = {
     shareSite: "Condividi Decimen",
     supportTitle: "Gratuito, open source, senza pubblicità",
     supportBodyHtml:
-      'Se Decimen ti ha semplificato la giornata, puoi <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">offrirmi un caffè</a>.',
+      'Se Decimen ti ha semplificato la giornata, puoi <a href="https://github.com/pabitralenka07/Optical_file_transfer" target="_blank" rel="noopener noreferrer">offrirmi un caffè</a>.',
     shareDialogTitle: "Condividi questa app",
     shareDialogHint:
       "Scansiona questo codice con la fotocamera di un altro dispositivo, oppure inviagli il link.",

@@ -43,7 +43,7 @@ export const messages: Messages = {
     shareSite: "Decimen を共有",
     supportTitle: "無料・オープンソース・広告なし",
     supportBodyHtml:
-      'Decimen が役に立ったら、<a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">コーヒーを1杯おごる</a>ことで応援できます。',
+      'Decimen が役に立ったら、<a href="https://github.com/pabitralenka07/Optical_file_transfer" target="_blank" rel="noopener noreferrer">コーヒーを1杯おごる</a>ことで応援できます。',
     shareDialogTitle: "このアプリを共有",
     shareDialogHint: "別のデバイスのカメラでこれをスキャンするか、リンクを送ってください。",
     siteLinkAriaLabel: "サイトのリンク",

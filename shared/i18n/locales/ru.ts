@@ -42,7 +42,7 @@ export const messages: Messages = {
     shareSite: "Поделиться Decimen",
     supportTitle: "Бесплатно, открытый код, без рекламы",
     supportBodyHtml:
-      'Если Decimen вам пригодился, можете <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">угостить меня кофе</a>.',
+      'Если Decimen вам пригодился, можете <a href="https://github.com/pabitralenka07/Optical_file_transfer" target="_blank" rel="noopener noreferrer">угостить меня кофе</a>.',
     shareDialogTitle: "Поделиться приложением",
     shareDialogHint:
       "Отсканируйте этот код камерой другого устройства или отправьте ему ссылку.",

@@ -45,7 +45,7 @@ export const messages: Messages = {
     shareSite: "Share Decimen",
     supportTitle: "Free, open source, no ads",
     supportBodyHtml:
-      'If Decimen made your day easier, you can <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">buy me a coffee</a>.',
+      'If Decimen made your day easier, you can <a href="https://github.com/pabitralenka07/Optical_file_transfer" target="_blank" rel="noopener noreferrer">support on GitHub</a>.',
     shareDialogTitle: "Share this app",
     shareDialogHint: "Scan this with another device's camera, or send it the link.",
     siteLinkAriaLabel: "Site link",

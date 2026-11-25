@@ -1,8 +1,17 @@
 {
-  "name": "decimen-optical-transfer",
+  "name": "optical-file-transfer",
   "private": true,
   "version": "0.5.3",
   "license": "AGPL-3.0-or-later",
+  "author": "Pabitra Lenka <pabitralenka489@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabitralenka07/Optical_file_transfer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pabitralenka07/Optical_file_transfer/issues"
+  },
+  "homepage": "https://github.com/pabitralenka07/Optical_file_transfer#readme",
   "engines": {
     "node": ">=20"
   },

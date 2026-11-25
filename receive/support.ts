@@ -8,7 +8,7 @@ export function supportLink(): HTMLElement | null {
   const p = document.createElement("p");
   p.className = "support-after";
   const a = document.createElement("a");
-  a.href = "https://buymeacoffee.com/bashalarmist";
+  a.href = "https://github.com/pabitralenka07/Optical_file_transfer";
   a.target = "_blank";
   a.rel = "noopener noreferrer";
   a.textContent = msg.receive.supportAfter;

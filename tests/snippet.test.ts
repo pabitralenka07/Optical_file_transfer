@@ -10,7 +10,7 @@ import {
 import { unpackFile, verifyFile } from "../shared/protocol.ts";
 
 test("a text snippet survives the optical container", async () => {
-  const text = "ssh-ed25519 AAAAC3Nz… evan@laptop\nand a second line.";
+  const text = "ssh-ed25519 AAAAC3Nz… pabitra@laptop\nand a second line.";
   const packed = await packSnippet(text);
   const file = await unpackFile(packed.container);
 

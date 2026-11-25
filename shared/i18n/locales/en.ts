@@ -23,7 +23,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — transfer files with light",
+    title: "Transfer files with light",
     metaDescription:
       "Send a file or text between two devices with nothing but a screen and a camera. Fountain-coded animated QR codes, no network path in between.",
     ogDescription:
